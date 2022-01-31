@@ -16,7 +16,7 @@ The results of my analysis will be used as part of a major report relating publi
 
 Time series data is just any data displaying how a single variable changes over time. It comes as a collection of metrics typically taken at regular intervals. Common examples of time series data include weekly sales data and daily stock prices. You can also easily acquire time series data from [Google Trends](https://trends.google.com/trends/?geo=US), which shows you how popular certain search terms are, measured in number of Google searches. 
 
-## 3. Visualizing predictor variable <code>**y**</code> using **Tableau**:
+## 3. Visualizing predictor variable <code>**y**</code>:
 
 
 ![cig_sales](https://raw.githubusercontent.com/mohamedziane/Time-Series-Forecasting-ARIMA-SARIMA-MODELS/main/images/CIG_SALES.png)
@@ -25,12 +25,21 @@ Time series data is just any data displaying how a single variable changes over 
 
 Building time series models can represent a lot of work for the modeler and so we want to maximize our ability to carry out these projects fast, efficiently and rigorously. This is where the Box-Jenkins method comes in. The Box-Jenkins method is a kind of checklist for you to go from raw data to a model ready for production. The three main steps that stand between you and a production-ready model are identification, estimation and model diagnostics:
 
-![box_Jenkins](INSERT BOX JENKINS DIAGRAM FROM INTERNET)
+<p align="center">
+  <img width="600" height="300" src="https://www.researchgate.net/profile/Francisco-Martinez-Alvarez/publication/284516167/figure/fig1/AS:302515112431616@1449136631471/The-Box-Jenkins-methodology.png">
+</p>
 
 **4.1 Identification:**
   * Is a Time Series stationary? What differencing will make it stationary?What transforms will make it stationary? What values of <code>**p**</code> and <code>**q**</code> are most promising?
 
-  ![ts_stattionary](INSERT LOGS AND LOG DIFF)
+<p align="left">
+  <img width="600" height="300" src="https://raw.githubusercontent.com/mohamedziane/Time-Series-Forecasting-ARIMA-SARIMA-MODELS/main/images/CIG_SALES_LOG.png">
+</p>
+
+<p align="right">
+  <img width="600" height="300" src="https://raw.githubusercontent.com/mohamedziane/Time-Series-Forecasting-ARIMA-SARIMA-MODELS/main/images/CIG_SALES_LOG_DIFF.png">
+</p>
+
   
     In this plot, the two red dotted lines on either sides of 0 are representing the confidence intervals. These can be used to determine the ‘p’ and ‘q’ values as:
       * q – The lag value where the ACF chart crosses the upper confidence interval for the first time. If you notice closely, in this case q=1.
