@@ -32,13 +32,11 @@ Building time series models can represent a lot of work for the modeler and so w
 **4.1 Identification:**
   * Is a Time Series stationary? What differencing will make it stationary?What transforms will make it stationary? What values of <code>**p**</code> and <code>**q**</code> are most promising?
 
-<p align="left">
+<p align="center">
   <img width="600" height="300" src="https://raw.githubusercontent.com/mohamedziane/Time-Series-Forecasting-ARIMA-SARIMA-MODELS/main/images/CIG_SALES_LOG.png">
-</p>
-
-<p align="right">
   <img width="600" height="300" src="https://raw.githubusercontent.com/mohamedziane/Time-Series-Forecasting-ARIMA-SARIMA-MODELS/main/images/CIG_SALES_LOG_DIFF.png">
 </p>
+
 
   
     In this plot, the two red dotted lines on either sides of 0 are representing the confidence intervals. These can be used to determine the ‘p’ and ‘q’ values as:
