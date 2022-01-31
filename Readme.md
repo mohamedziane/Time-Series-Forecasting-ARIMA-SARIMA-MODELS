@@ -1,4 +1,5 @@
 # Time-Series-Forecasting-ARIMA-SARIMA-MODELS
+# Determining whether sales for the oldest and most powerful producers of cigarettes in the country are increasing or declining
 
 <p align="center">
   <img width="600" height="300" src="https://algorithmia.com/blog/wp-content/uploads/2018/02/chart-1905225_1920-1.jpg">
