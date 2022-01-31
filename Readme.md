@@ -19,7 +19,7 @@ Time series data is just any data displaying how a single variable changes over 
 ## 3. Visualizing predictor variable <code>**y**</code> using **Tableau**:
 
 
-![cig_sales](INSERT CIG SALES)
+![cig_sales](https://raw.githubusercontent.com/mohamedziane/Time-Series-Forecasting-ARIMA-SARIMA-MODELS/main/images/CIG_SALES.png)
 
 ## 4 The Box-Jenkins method
 
