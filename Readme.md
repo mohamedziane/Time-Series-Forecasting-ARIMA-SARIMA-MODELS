@@ -52,7 +52,7 @@ Building time series models can represent a lot of work for the modeler and so w
 
  * The output of our code suggests that SARIMAX(1,0,0)x(2, 0, 0, 12) yields the lowest AIC value of 8.0 (This confirmed what we predicted from the ACF and PACF). We should therefore consider this to be optimal option out of all the models we have considered. (This confirmed what we predicted from the ACF and PACF). We should therefore consider this to be optimal option out of all the models we have considered.
 
- ![grid_search](INSERT PARAM_SEASONAL_AIC_BIC)
+ ![grid_search](https://raw.githubusercontent.com/mohamedziane/Time-Series-Forecasting-ARIMA-SARIMA-MODELS/main/images/PARAM_SEASONAL_AIC_BIC.png)
  
 **4.3 Model Diagnostics:** 
 
@@ -62,7 +62,7 @@ Building time series models can represent a lot of work for the modeler and so w
      * **Prob(Q):** p-value for null hypothesis that residuals are uncorrelated. Reject the null hypothesis and the residuals are correlated.
      * **Prob(JB):** p-value for null hypothesis that residuals are normally distributed. for our Model Prob(JB) is Zero , which means you should reject the null hypothesis that the residuals are normally distributed (This time the JB value was thrown off by the one outlying point in the time series).
 
- ![summary](INSERT SUMMARY STATS)
+ ![summary](https://raw.githubusercontent.com/mohamedziane/Time-Series-Forecasting-ARIMA-SARIMA-MODELS/main/images/SUMMARY_STATS.png)
 
 
  * diagnostic plots <code>**.plot_diagnostics() method**</code> to make sure the residuals are well behaved:
@@ -73,7 +73,7 @@ Building time series models can represent a lot of work for the modeler and so w
      * **Normal Q-Q:** Most of the data points should lie on the straight line (Residuals are normally distributed because most the points lie along the red line, except perhaps some values at either end).
      * **Correlogram (ACF):** 95% of correlations for lag greater than one should not be significant.
 
- ![plot](INSERT DIAGNOSTICS)
+ ![plot](https://raw.githubusercontent.com/mohamedziane/Time-Series-Forecasting-ARIMA-SARIMA-MODELS/main/images/DIAGNOSTICS.png)
 
 ## 5. Application - Forecasting: 
 
@@ -81,7 +81,7 @@ Our model captures the centre of a line that's increasing at a remarkable rate. 
 
 Remarkably, our ARIMA model made predictions using just one variable. We can only speculate, however, on the causes of the behaviour predicted by our model. We should also take heed that spikes in data, due to sudden unusual circumstances like wars, are not handled well by ARIMA; and the outbreak of the Vietnam War in the 1960s would likely cause our model some distress.
 
-![forecasting](INSERT SARIMA_FORECASTING)
+![forecasting](https://raw.githubusercontent.com/mohamedziane/Time-Series-Forecasting-ARIMA-SARIMA-MODELS/main/images/SARIMA_FORECASTING.png)
 
 ## 6. Conclusion:
 
